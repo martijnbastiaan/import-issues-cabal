@@ -11,12 +11,6 @@ library
   build-depends:       base
   default-language:    Haskell2010
 
-library extra
-  exposed-modules:     LibraryExtra
-  hs-source-dirs:      src
-  build-depends:       base
-  default-language:    Haskell2010
-
 test-suite import-issues
   main-is:             Main.hs
   type:                exitcode-stdio-1.0
