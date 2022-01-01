@@ -1,5 +1,5 @@
 cabal-version:       >=1.10
-name:                import-issues
+name:                import-issues-cabal
 version:             0.1.0.0
 author:              Martijn Bastiaan
 maintainer:          martijn@hmbastiaan.nl
@@ -17,8 +17,9 @@ library extra
   build-depends:       base
   default-language:    Haskell2010
 
-executable import-issues
+test-suite import-issues
   main-is:             Main.hs
+  type:                exitcode-stdio-1.0
   hs-source-dirs:      src
-  build-depends:       base, process, import-issues, extra
+  build-depends:       base, process, import-issues-cabal, extra
   default-language:    Haskell2010
